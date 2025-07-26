@@ -10,8 +10,70 @@
   } */
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  .top-navigation li :hover {
+    font-weight: bold;
+  }
+
+  .teammate-social-icons>div :hover {
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icons :hover span {
+    color: white;
+  }
+
+  footer .social-icons :hover .icon {
+    color: black;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  footer .email ul li :hover,
+  footer .phones ul li :hover {
+    color: white;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width:1023px) {
+  .portfolio-list {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    flex-direction: row;
+  }
+
+  .teammates-list {
+    justify-content: center;
+  }
+
+  .teammates-list-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .teammate {
+    width: 45%
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width:767px) {}
